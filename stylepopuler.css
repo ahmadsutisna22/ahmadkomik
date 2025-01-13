@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.header-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header-link:hover {
+    color: #ffcc00;
+}
+
+.navbar {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar li {
+    margin-left: 20px;
+}
+
+.navbar li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s; /* Transisi untuk warna dan latar belakang */
+}
+
+.navbar li a:hover {
+    background-color: #555;
+    cursor: pointer; /* Mengubah kursor saat hover */
+    color: #ffcc00; /* Mengubah warna teks saat hover */
+}
+
+.komik-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.komik-item {
+    width: 30%;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transisi untuk transformasi dan bayangan */
+}
+
+.komik-item:hover {
+    transform: translateY(-5px); /* Mengangkat elemen saat hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Menambah bayangan saat hover */
+}
+
+.komik-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
